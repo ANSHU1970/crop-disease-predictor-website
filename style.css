@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+}
+.card-body {
+    text-align: center;
+}
+.crop-card {
+    margin-top: 20px;
+}
+.crop-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.image-preview {
+width: 100%;
+height: 200px; 
+object-fit: cover; 
+display: none;
+border: 2px solid #ddd;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #a81308;
+    margin-top: 20px;
+}

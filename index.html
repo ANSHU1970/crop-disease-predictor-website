@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Crop Disease Predictor</h1>
+        <p class="text-center mb-5">Upload an image of a leaf from any crop below to check for diseases.</p>
+        
+        <div class="row">
+            
+            <div class="col-md-6 col-lg-3 crop-card">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h2 class="crop-title">Potato</h2>
+                        <p>Upload an image of a potato leaf.</p>
+                        <input type="file" class="form-control-file" id="potatoImageUpload" accept="image/*" onchange="previewImage(event, 'potatoImagePreview')" />
+                        <img id="potatoImagePreview" class="image-preview" />
+                        <button onclick="predictPotatoDisease()" class="btn btn-success btn-lg mt-4">Predict Disease</button>
+                        <div id="potatoResult" class="result"></div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="col-md-6 col-lg-3 crop-card">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h2 class="crop-title">Tomato</h2>
+                        <p>Upload an image of a tomato leaf.</p>
+                        <input type="file" class="form-control-file" id="tomatoImageUpload" accept="image/*" onchange="previewImage(event, 'tomatoImagePreview')" />
+                        <img id="tomatoImagePreview" class="image-preview" />
+                        <button onclick="predictTomatoDisease()" class="btn btn-success btn-lg mt-4">Predict Disease</button>
+                        <div id="tomatoResult" class="result"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-lg-3 crop-card">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h2 class="crop-title">Rice</h2>
+                        <p>Upload an image of a rice leaf.</p>
+                        <input type="file" class="form-control-file" id="riceImageUpload" accept="image/*" onchange="previewImage(event, 'riceImagePreview')" />
+                        <img id="riceImagePreview" class="image-preview" />
+                        <button onclick="predictRiceDisease()" class="btn btn-success btn-lg mt-4">Predict Disease</button>
+                        <div id="riceResult" class="result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 crop-card">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h2 class="crop-title">Wheat</h2>
+                        <p>Upload an image of a wheat leaf.</p>
+                        <input type="file" class="form-control-file" id="wheatImageUpload" accept="image/*" onchange="previewImage(event, 'wheatImagePreview')" />
+                        <img id="wheatImagePreview" class="image-preview" />
+                        <button onclick="predictWheatDisease()" class="btn btn-success btn-lg mt-4">Predict Disease</button>
+                        <div id="wheatResult" class="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
