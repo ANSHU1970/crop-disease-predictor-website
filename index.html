@@ -6,50 +6,50 @@
     <title>Crop Disease Predictor</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center my-4">Crop Disease Predictor</h1>
-        <p class="text-center mb-5">Upload an image of a leaf from any crop below to check for diseases.</p>
+        <h1 class="text-center my-4 text-white">Crop Disease Predictor</h1>
+        <p class="text-center mb-5 text-light">Upload an image of a leaf from any crop below to check for diseases.</p>
         
         <div class="row">
             
             <div class="col-md-6 col-lg-3 crop-card">
-                <div class="card shadow-lg">
+                <div class="card shadow-lg border-primary transparent-card">
                     <div class="card-body">
-                        <h2 class="crop-title">Potato</h2>
-                        <p>Upload an image of a potato leaf.</p>
-                        <input type="file" class="form-control-file" id="potatoImageUpload" accept="image/*" onchange="previewImage(event, 'potatoImagePreview')" />
+                        <h2 class="crop-title text-primary">Potato</h2>
+                        <p class="text-light">Upload an image of a potato leaf.</p>
+                        <input type="file" class="form-control-file custom-input" id="potatoImageUpload" accept="image/*" onchange="previewImage(event, 'potatoImagePreview')" />
                         <img id="potatoImagePreview" class="image-preview" />
+                        <div class="loader" id="potatoLoader"></div>
                         <button onclick="predictPotatoDisease()" class="btn btn-success btn-lg mt-4">Predict Disease</button>
                         <div id="potatoResult" class="result"></div>
                     </div>
                 </div>
             </div>
 
-        
             <div class="col-md-6 col-lg-3 crop-card">
-                <div class="card shadow-lg">
+                <div class="card shadow-lg border-primary transparent-card">
                     <div class="card-body">
-                        <h2 class="crop-title">Tomato</h2>
-                        <p>Upload an image of a tomato leaf.</p>
-                        <input type="file" class="form-control-file" id="tomatoImageUpload" accept="image/*" onchange="previewImage(event, 'tomatoImagePreview')" />
+                        <h2 class="crop-title text-primary">Tomato</h2>
+                        <p class="text-light">Upload an image of a tomato leaf.</p>
+                        <input type="file" class="form-control-file custom-input" id="tomatoImageUpload" accept="image/*" onchange="previewImage(event, 'tomatoImagePreview')" />
                         <img id="tomatoImagePreview" class="image-preview" />
+                        <div class="loader" id="tomatoLoader"></div>
                         <button onclick="predictTomatoDisease()" class="btn btn-success btn-lg mt-4">Predict Disease</button>
                         <div id="tomatoResult" class="result"></div>
                     </div>
                 </div>
             </div>
 
-            
             <div class="col-md-6 col-lg-3 crop-card">
-                <div class="card shadow-lg">
+                <div class="card shadow-lg border-primary transparent-card">
                     <div class="card-body">
-                        <h2 class="crop-title">Rice</h2>
-                        <p>Upload an image of a rice leaf.</p>
-                        <input type="file" class="form-control-file" id="riceImageUpload" accept="image/*" onchange="previewImage(event, 'riceImagePreview')" />
+                        <h2 class="crop-title text-primary">Rice</h2>
+                        <p class="text-light">Upload an image of a rice leaf.</p>
+                        <input type="file" class="form-control-file custom-input" id="riceImageUpload" accept="image/*" onchange="previewImage(event, 'riceImagePreview')" />
                         <img id="riceImagePreview" class="image-preview" />
+                        <div class="loader" id="riceLoader"></div>
                         <button onclick="predictRiceDisease()" class="btn btn-success btn-lg mt-4">Predict Disease</button>
                         <div id="riceResult" class="result"></div>
                     </div>
@@ -57,17 +57,19 @@
             </div>
 
             <div class="col-md-6 col-lg-3 crop-card">
-                <div class="card shadow-lg">
+                <div class="card shadow-lg border-primary transparent-card">
                     <div class="card-body">
-                        <h2 class="crop-title">Wheat</h2>
-                        <p>Upload an image of a wheat leaf.</p>
-                        <input type="file" class="form-control-file" id="wheatImageUpload" accept="image/*" onchange="previewImage(event, 'wheatImagePreview')" />
+                        <h2 class="crop-title text-primary">Wheat</h2>
+                        <p class="text-light">Upload an image of a wheat leaf.</p>
+                        <input type="file" class="form-control-file custom-input" id="wheatImageUpload" accept="image/*" onchange="previewImage(event, 'wheatImagePreview')" />
                         <img id="wheatImagePreview" class="image-preview" />
+                        <div class="loader" id="wheatLoader"></div>
                         <button onclick="predictWheatDisease()" class="btn btn-success btn-lg mt-4">Predict Disease</button>
                         <div id="wheatResult" class="result"></div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -75,18 +77,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-    <script>
-window.embeddedChatbotConfig = {
-chatbotId: "9AuJRl9RPXGxhPapLVwGZ",
-domain: "www.chatbase.co"
-}
-</script>
-<script
-src="https://www.chatbase.co/embed.min.js"
-chatbotId="9AuJRl9RPXGxhPapLVwGZ"
-domain="www.chatbase.co"
-defer>
-</script>
 </body>
 </html>
-
