@@ -21,7 +21,7 @@ function predictTomatoDisease() {
 function predictRiceDisease() {
     const imageFile = document.getElementById('riceImageUpload').files[0];
     if (imageFile) {
-        callApi(imageFile, 'https://rice-disease-api.onrender.com/predict', 'riceResult');
+        callApi(imageFile, 'https://impossible-tobye-anshuman1970-2ef2da16.koyeb.app/predict', 'riceResult');
     }
 }
 
