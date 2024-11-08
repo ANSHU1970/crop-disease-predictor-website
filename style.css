@@ -1,29 +1,67 @@
 body {
-    background-color: #f8f9fa;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
 }
+
+.transparent-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
 .card-body {
     text-align: center;
 }
+
 .crop-card {
     margin-top: 20px;
 }
+
 .crop-title {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 .image-preview {
-width: 100%;
-height: 200px; 
-object-fit: cover; 
-display: none;
-border: 2px solid #ddd;
-border-radius: 5px;
-margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: none;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.custom-input {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #243b55;
 }
 
 .result {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #a81308;
+    color: #ffeb3b;
     margin-top: 20px;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
